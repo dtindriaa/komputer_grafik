@@ -1,13 +1,17 @@
-import cv2 
+import cv2
 
-folder_name = input('komputer_grafik: ')
-size_in = input('ukuran_kotak: ')
+print('folder_name: ')
+folder_name = input('komputer_grafik ')
+print('ukuran_kotak: ')
+size_in = input('150')
 size = int(size_in)
-img = cv2.imread('image1.jpg')
+img = cv2.imread('image2.jpg')
 
 def crop_by_position(img, position, size):
-    pass
-
+    # Implement your logic here to crop the image based on position and size
+    # For now, let's assume you have implemented the function correctly
+    
+    return
 
 top_left = crop_by_position(img, 'top_left', size)
 cv2.imwrite(f'{folder_name}/top_left.jpg', top_left)
